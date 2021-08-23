@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --font-stack: "Nunito", sans-serif;
+        --site-blue: #00a7e1;
+        --site-champagne: #eddea4;
+        --site-salmon: #f7a072;
+        --site-off-white: #fdfdfd;
+        --site-near-black: #333;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      ul,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      p,
+      a,
+      .lg-form label,
+      .lg-form input,
+      .lg-form textarea,
+      .lg-form button {
+        font-family: var(--font-stack);
+      }
+
+      #approach {
+        background-color: var(--site-champagne);
+      }
+
+      #contact {
+        background-color: var(--site-salmon);
+      }
+
+      header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--site-off-white);
+        padding: 1rem;
+        z-index: 1;
+      }
+
+      header h1 {
+        background: url("./piano.svg");
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        padding-left: 3.25rem;
+        flex-grow: 1;
+      }
+
+      header h1 span {
+        font-size: 1.4rem;
+        white-space: nowrap;
+      }
+
+      @media screen and (min-width: 400px) {
+        header h1 span {
+          font-size: 1.8rem;
+        }
+      }
+
+      header nav ul {
+        display: flex;
+        gap: 1rem;
+      }
+
+      header nav a {
+        color: var(--site-near-black);
+        font-weight: 700;
+        position: relative;
+        top: -1px;
+      }
+
+      main {
+        padding-top: 5rem;
+      }
+
+      main h2 {
+        color: var(--near-black);
+      }
+
+      main p {
+        margin-bottom: 1rem;
+      }
+
+      section {
+        min-height: 100vh;
+        scroll-margin-top: 5rem;
+        position: relative;
+        padding: 1.5rem 2rem;
+      }
+
+      .lg-form label,
+      button {
+        cursor: pointer;
+      }
+
+      .lg-form input[type="text"],
+      .lg-form input[type="date"],
+      .lg-form input[type="datetime"],
+      .lg-form input[type="email"],
+      .lg-form input[type="number"],
+      .lg-form input[type="search"],
+      .lg-form input[type="time"],
+      .lg-form input[type="url"],
+      .lg-form textarea,
+      .lg-form select {
+        transition: all 0.3s ease-in-out;
+        outline: none;
+        width: 100%;
+        background: var(--site-off-white);
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 95% var(--font-stack);
+      }
+      .lg-form input[type="text"]:focus,
+      .lg-form input[type="date"]:focus,
+      .lg-form input[type="datetime"]:focus,
+      .lg-form input[type="email"]:focus,
+      .lg-form input[type="number"]:focus,
+      .lg-form input[type="search"]:focus,
+      .lg-form input[type="time"]:focus,
+      .lg-form input[type="url"]:focus,
+      .lg-form textarea:focus,
+      .lg-form select:focus {
+        box-shadow: 0 0 5px var(--site-blue);
+        padding: 3%;
+        border: 1px solid var(--site-blue);
+      }
+
+      .lg-form [type="submit"],
+      .lg-form [type="button"] {
+        width: 100%;
+        padding: 3%;
+        background: var(--site-blue);
+        border-bottom: 2px solid #30c29e;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        color: var(--site-near-black);
+        font-weight: 700;
+      }
+
+      .lg-form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 1rem;
+      }
+
+      .lg-form .half {
+        grid-column: span 2;
+      }
+
+      .lg-form .whole {
+        grid-column: span 4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>LG Piano</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="approach">
+        <h2>My Approach</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+          error, maiores rerum hic debitis, ex obcaecati, soluta unde molestias
+          velit ea facere! Perspiciatis fugiat modi odio mollitia corporis ea
+          voluptatem! Iusto assumenda dolores distinctio maxime veritatis
+          consequuntur exercitationem temporibus, facere voluptas officiis
+          commodi totam tenetur soluta enim beatae velit debitis aut. Eligendi
+          aliquid repellat similique magnam dignissimos accusamus dolorum
+          fugiat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          dignissimos sed, cum iure magni est voluptate incidunt ex, tenetur
+          facilis omnis suscipit impedit architecto maxime natus soluta eum
+          alias dicta.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form
+          class="lg-form"
+          action="https://formspree.io/f/{form_id}"
+          method="post"
+        >
+          <div class="half">
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" required />
+          </div>
+          <div class="half">
+            <label for="email">Your Email</label>
+            <input name="Email" id="email" type="email" required />
+          </div>
+          <div class="whole">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <div class="whole">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
